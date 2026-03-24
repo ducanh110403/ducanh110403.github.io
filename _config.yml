@@ -1,17 +1,10 @@
+theme: minima
+
 title: Duc Anh Security Blog
 description: DFIR | SOC | Threat Hunting | Malware Analysis
 
-theme: jekyll-theme-hacker   # Built-in GitHub Pages theme
+minima:
+  skin: dark
 
-# Optional customizations
-show_downloads: false
-google_analytics:   # Add your tracking ID if needed
-
-# For better Markdown rendering
 markdown: kramdown
 highlighter: rouge
-
-# Collections (if you want categories as separate sections later)
-collections:
-  categories:
-    output: true
