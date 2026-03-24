@@ -1,10 +1,5 @@
-theme: minima
-
 title: Duc Anh Security Blog
 description: DFIR | SOC | Threat Hunting | Malware Analysis
-
-minima:
-  skin: dark
 
 markdown: kramdown
 highlighter: rouge
