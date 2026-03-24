@@ -1,49 +1,50 @@
 ---
 layout: default
+title: Home
 ---
 
-<header>
-  <h1>Duc Anh Security Blog</h1>
-  <p class="subtitle">DFIR | SOC | Threat Hunting | Malware Analysis</p>
-</header>
+# 🛡️ Duc Anh Security Blog
 
-<section class="about">
-  <h2>About</h2>
-  <p>Blue Team / SOC Engineer focused on Digital Forensics & Incident Response (DFIR), malware analysis, threat hunting, and detection engineering. Sharing practical writeups, lab exercises, and real-world investigations.</p>
-</section>
+> DFIR | SOC | Threat Hunting | Malware Analysis
 
-<section class="posts">
-  <h2>Latest Posts</h2>
-  <ul class="post-list">
-    {% for post in site.posts limit: 6 %}
-    <li class="post-card">
-      <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-      {% if post.tags %}
-        <div class="tags">
-          {% for tag in post.tags %}
-            <span class="tag">#{{ tag }}</span>
-          {% endfor %}
-        </div>
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+---
 
-<section class="categories">
-  <h2>Categories</h2>
-  <ul>
-    <li><a href="#">Malware Analysis</a></li>
-    <li><a href="#">DFIR</a></li>
-    <li><a href="#">Log Analysis</a></li>
-    <li><a href="#">Incident Response</a></li>
-    <li><a href="#">Threat Hunting</a></li>
-  </ul>
-</section>
+## 👨‍💻 About
 
-<footer>
-  <p>Built with ❤️ for the Blue Team • <a href="https://github.com/yourusername/your-repo" target="_blank">GitHub</a></p>
-  <blockquote>"Detection is a data problem. Response is a people problem." — Unknown</blockquote>
-</footer>
+Blue Team / SOC Engineer focusing on:
+
+- Malware Analysis  
+- Digital Forensics (DFIR)  
+- Threat Hunting  
+- Incident Response  
+
+---
+
+## 📚 Latest Posts
+
+{% raw %}
+<div class="post-list">
+{% for post in site.posts %}
+  <div class="post-card">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+    <p>{{ post.excerpt }}</p>
+  </div>
+{% endfor %}
+</div>
+{% endraw %}
+
+---
+
+## 🧩 Categories
+
+- 🦠 Malware Analysis  
+- 🔐 DFIR  
+- 📊 Log Analysis  
+- 🚨 Incident Response  
+
+---
+
+## 📫 Contact
+
+- GitHub: https://github.com/ducanh110403
