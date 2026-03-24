@@ -1,14 +1,9 @@
 ---
 layout: default
-title: Duc Anh Blog
+title: Home
 ---
 
-# 🚀 Duc Anh Security Blog
-
-Chuyên về:
-- DFIR
-- SOC
-- Malware Analysis
+# 🚀 Blog của Đức Anh
 
 ## 📚 Bài viết
 
