@@ -4,9 +4,11 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
-  <small>{{ page.date | date: "%Y-%m-%d" }}</small>
+  <div class="meta">
+    <span>{{ page.date | date: "%Y-%m-%d" }}</span>
+  </div>
 
-  <div class="post-content">
+  <div class="post-body">
     {{ content }}
   </div>
 </article>
